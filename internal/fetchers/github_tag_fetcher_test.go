@@ -15,12 +15,12 @@ func TestGitHubTagFetcher(t *testing.T) {
 
 	gtf := fetchers.GitHubLatestTag{
 		Client:     c,
-		Owner:      owner,
-		Repository: repo,
+		Owner:      "endorama",
+		Repository: "2ami",
 	}
 
 	rel, err := gtf.Fetch(context.Background())
 	require.Nil(t, err)
 
-	require.Equal(t, "0.6.0", rel.Version.String())
+	require.Equal(t, "0.6.0", rel.String())
 }

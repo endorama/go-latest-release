@@ -3,7 +3,7 @@ package fetchers
 import (
 	"context"
 
-	latestrelease "github.com/endorama/go-latest-release"
+	"github.com/hashicorp/go-version"
 )
 
 func New(s ReleaseFetcher) Fetcher {
@@ -13,7 +13,7 @@ func New(s ReleaseFetcher) Fetcher {
 }
 
 type ReleaseFetcher interface {
-	Fetch(ctx context.Context) (latestrelease.Release, error)
+	Fetch(ctx context.Context) (*version.Version, error)
 }
 
 type Fetcher struct {
@@ -24,6 +24,6 @@ func (f *Fetcher) SetStrategy(s ReleaseFetcher) {
 	f.strategy = s
 }
 
-func (f Fetcher) Execute(ctx context.Context) (latestrelease.Release, error) {
+func (f Fetcher) Execute(ctx context.Context) (*version.Version, error) {
 	return f.strategy.Fetch(ctx)
 }

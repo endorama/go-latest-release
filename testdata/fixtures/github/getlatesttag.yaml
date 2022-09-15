@@ -1,0 +1,77 @@
+---
+version: 1
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - go-github
+    url: https://api.github.com/repos/endorama/2ami/releases/latest
+    method: GET
+  response:
+    body: '{"url":"https://api.github.com/repos/endorama/2ami/releases/76730999","assets_url":"https://api.github.com/repos/endorama/2ami/releases/76730999/assets","upload_url":"https://uploads.github.com/repos/endorama/2ami/releases/76730999/assets{?name,label}","html_url":"https://github.com/endorama/2ami/releases/tag/v0.6.0","id":76730999,"author":{"login":"github-actions[bot]","id":41898282,"node_id":"MDM6Qm90NDE4OTgyODI=","avatar_url":"https://avatars.githubusercontent.com/in/15368?v=4","gravatar_id":"","url":"https://api.github.com/users/github-actions%5Bbot%5D","html_url":"https://github.com/apps/github-actions","followers_url":"https://api.github.com/users/github-actions%5Bbot%5D/followers","following_url":"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}","gists_url":"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}","starred_url":"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions","organizations_url":"https://api.github.com/users/github-actions%5Bbot%5D/orgs","repos_url":"https://api.github.com/users/github-actions%5Bbot%5D/repos","events_url":"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}","received_events_url":"https://api.github.com/users/github-actions%5Bbot%5D/received_events","type":"Bot","site_admin":false},"node_id":"RE_kwDOCEYC6c4EktJ3","tag_name":"v0.6.0","target_commitish":"master","name":"v0.6.0","draft":false,"prerelease":false,"created_at":"2022-09-09T15:22:42Z","published_at":"2022-09-09T15:42:29Z","assets":[{"url":"https://api.github.com/repos/endorama/2ami/releases/assets/77369751","id":77369751,"node_id":"RA_kwDOCEYC6c4EnJGX","name":"2ami-v0.6.0-darwin-amd64","label":"","uploader":{"login":"github-actions[bot]","id":41898282,"node_id":"MDM6Qm90NDE4OTgyODI=","avatar_url":"https://avatars.githubusercontent.com/in/15368?v=4","gravatar_id":"","url":"https://api.github.com/users/github-actions%5Bbot%5D","html_url":"https://github.com/apps/github-actions","followers_url":"https://api.github.com/users/github-actions%5Bbot%5D/followers","following_url":"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}","gists_url":"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}","starred_url":"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions","organizations_url":"https://api.github.com/users/github-actions%5Bbot%5D/orgs","repos_url":"https://api.github.com/users/github-actions%5Bbot%5D/repos","events_url":"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}","received_events_url":"https://api.github.com/users/github-actions%5Bbot%5D/received_events","type":"Bot","site_admin":false},"content_type":"application/octet-stream","state":"uploaded","size":6754128,"download_count":0,"created_at":"2022-09-09T15:31:41Z","updated_at":"2022-09-09T15:31:42Z","browser_download_url":"https://github.com/endorama/2ami/releases/download/v0.6.0/2ami-v0.6.0-darwin-amd64"},{"url":"https://api.github.com/repos/endorama/2ami/releases/assets/77369727","id":77369727,"node_id":"RA_kwDOCEYC6c4EnJF_","name":"2ami-v0.6.0-linux-amd64","label":"","uploader":{"login":"github-actions[bot]","id":41898282,"node_id":"MDM6Qm90NDE4OTgyODI=","avatar_url":"https://avatars.githubusercontent.com/in/15368?v=4","gravatar_id":"","url":"https://api.github.com/users/github-actions%5Bbot%5D","html_url":"https://github.com/apps/github-actions","followers_url":"https://api.github.com/users/github-actions%5Bbot%5D/followers","following_url":"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}","gists_url":"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}","starred_url":"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions","organizations_url":"https://api.github.com/users/github-actions%5Bbot%5D/orgs","repos_url":"https://api.github.com/users/github-actions%5Bbot%5D/repos","events_url":"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}","received_events_url":"https://api.github.com/users/github-actions%5Bbot%5D/received_events","type":"Bot","site_admin":false},"content_type":"application/octet-stream","state":"uploaded","size":6850192,"download_count":1,"created_at":"2022-09-09T15:31:19Z","updated_at":"2022-09-09T15:31:20Z","browser_download_url":"https://github.com/endorama/2ami/releases/download/v0.6.0/2ami-v0.6.0-linux-amd64"},{"url":"https://api.github.com/repos/endorama/2ami/releases/assets/77369801","id":77369801,"node_id":"RA_kwDOCEYC6c4EnJHJ","name":"2ami-v0.6.0-windows-amd64.exe","label":"","uploader":{"login":"github-actions[bot]","id":41898282,"node_id":"MDM6Qm90NDE4OTgyODI=","avatar_url":"https://avatars.githubusercontent.com/in/15368?v=4","gravatar_id":"","url":"https://api.github.com/users/github-actions%5Bbot%5D","html_url":"https://github.com/apps/github-actions","followers_url":"https://api.github.com/users/github-actions%5Bbot%5D/followers","following_url":"https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}","gists_url":"https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}","starred_url":"https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/github-actions%5Bbot%5D/subscriptions","organizations_url":"https://api.github.com/users/github-actions%5Bbot%5D/orgs","repos_url":"https://api.github.com/users/github-actions%5Bbot%5D/repos","events_url":"https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}","received_events_url":"https://api.github.com/users/github-actions%5Bbot%5D/received_events","type":"Bot","site_admin":false},"content_type":"application/x-msdownload","state":"uploaded","size":6535168,"download_count":0,"created_at":"2022-09-09T15:32:50Z","updated_at":"2022-09-09T15:32:51Z","browser_download_url":"https://github.com/endorama/2ami/releases/download/v0.6.0/2ami-v0.6.0-windows-amd64.exe"}],"tarball_url":"https://api.github.com/repos/endorama/2ami/tarball/v0.6.0","zipball_url":"https://api.github.com/repos/endorama/2ami/zipball/v0.6.0","body":"##
+      What''s Changed\r\n* add tests by @endorama in https://github.com/endorama/2ami/pull/19\r\n*
+      Perform rebrand by @endorama in https://github.com/endorama/2ami/pull/17\r\n*
+      code improvements by @endorama in https://github.com/endorama/2ami/pull/32\r\n*
+      update to go 1.17.1 by @endorama in https://github.com/endorama/2ami/pull/31\r\n*
+      Implement user configurable settings by @endorama in https://github.com/endorama/2ami/pull/33\r\n*
+      Added support backing up and restoring of saved values. by @backwards-rat-race
+      in https://github.com/endorama/2ami/pull/34\r\n* Release pipeline is automated!\r\n\r\n##
+      New Contributors\r\n* @backwards-rat-race made their first contribution in https://github.com/endorama/2ami/pull/34\r\n\r\n**Full
+      Changelog**: https://github.com/endorama/2ami/compare/v0.5.0...v0.6.0","mentions_count":2}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO,
+        X-GitHub-Request-Id, Deprecation, Sunset
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 15 Sep 2022 21:48:52 GMT
+      Etag:
+      - W/"72a3f68611422899fdf994b4bede5c58f2a629254e2c2cc6dca6b0accee46430"
+      Last-Modified:
+      - Fri, 09 Sep 2022 15:42:29 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Vary:
+      - Accept, Accept-Encoding, Accept, X-Requested-With
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Github-Request-Id:
+      - 4260:4AD1:146EA40:14BCCCA:63239DC4
+      X-Ratelimit-Limit:
+      - "60"
+      X-Ratelimit-Remaining:
+      - "53"
+      X-Ratelimit-Reset:
+      - "1663279367"
+      X-Ratelimit-Resource:
+      - core
+      X-Ratelimit-Used:
+      - "7"
+      X-Xss-Protection:
+      - "0"
+    status: 200 OK
+    code: 200
+    duration: 360.660194ms

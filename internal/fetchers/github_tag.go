@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"net/http"
 
-	latestrelease "github.com/endorama/go-latest-release"
 	"github.com/google/go-github/github"
 	version "github.com/hashicorp/go-version"
 )
@@ -20,23 +19,22 @@ type GitHubLatestTag struct {
 	Repository string
 }
 
-func (g GitHubLatestTag) Fetch(ctx context.Context) (latestrelease.Release, error) {
+func (g GitHubLatestTag) Fetch(ctx context.Context) (*version.Version, error) {
 	client := github.NewClient(g.Client)
-	// client.BaseURL, _ = url.Parse(opts.URL)
 
 	rels, resp, err := client.Repositories.GetLatestRelease(ctx, g.Owner, g.Repository)
 	if err != nil {
-		return latestrelease.Release{}, fmt.Errorf("cannot retrieve latest release: %w", err)
+		return &version.Version{}, fmt.Errorf("cannot retrieve latest release: %w", err)
 	}
 
 	if resp.StatusCode != 200 {
-		return latestrelease.Release{}, fmt.Errorf("status code was not 200: status code %d", resp.StatusCode)
+		return &version.Version{}, fmt.Errorf("status code was not 200: status code %d", resp.StatusCode)
 	}
 
 	v, err := version.NewSemver(rels.GetTagName())
 	if err != nil {
-		return latestrelease.Release{}, err
+		return &version.Version{}, err
 	}
 
-	return latestrelease.Release{Version: v}, err
+	return v, err
 }
